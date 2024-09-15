@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; 
+import Header from './components/Header/header';
+import SearchResults from './components/SearchResults/SearchResults';
+import TrademarkDetails from './components/TrademarkDetails/TrademarkDetails';
+import StatusComponent from './components/RightFilter/StatusComponent';
+import OwnerList from './components/RightFilter/OwnerList'; 
+import PreferenceDisplay from './components/RightFilter/PrefencesDisplay'; 
+import styles from './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Header />
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <div className={styles.searchResultsContainer}>
+            <SearchResults />
+          </div>
+          
+          <div className='align'>
+            <div className={styles.trademarkDetailsContainer}>
+                <TrademarkDetails />
+
+            </div>
+            <div className={styles.rightColumn}>
+                <StatusComponent />
+                <OwnerList/>
+                <PreferenceDisplay/>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
-}
+};
 
 export default App;

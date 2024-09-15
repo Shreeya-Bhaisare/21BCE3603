@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  flex: 1;
+  display: flex;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
 }
+
+.searchResultsContainer {
+  display: flex;
+  flex-direction: row; /* Align TrademarkDetails and the column of other components side by side */
+  gap: 20px; /* Space between TrademarkDetails and the right column */
+}
+
+.align {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
+  /* justify-content: space-around; Ensure space between the left and right columns */
+  align-items: flex-start; /* Align items at the top */
+}
+
+.trademarkDetailsContainer {
+  flex: 1; /* Allows TrademarkDetails to take up remaining space on the left */
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left in the column */
+  gap: 20px; /* Space between vertically stacked items */
+}
+

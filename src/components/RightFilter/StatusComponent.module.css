@@ -1,0 +1,60 @@
+.statusContainer {
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(231, 231, 231, 0.25), 0 3.935px 10px rgba(232, 232, 232, 0.25), 0 4.343px 68px rgba(198, 198, 198, 0.25);
+    background-color: #fff;
+    display: flex;
+    min-height: 161px;
+    width: 100%;
+    max-width: 296px;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 18px 16px 48px 18px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-family: Gilroy, sans-serif;
+  }
+  
+  .statusTitle {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .statusOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+  
+  .allOption {
+    border-radius: 12px;
+    background-color: #eef4ff;
+    color: #4380ec;
+    padding: 10px 12px;
+    border: 1px solid #4380ec;
+  }
+  
+  .statusOption {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 10px 12px;
+    border: 1px solid #d1d1d1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .statusIndicator {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .registered { background-color: #52b649; }
+  .pending { background-color: #ecc53c; }
+  .abandoned { background-color: #ec3c3c; }
+  .others { background-color: #4380ec; }

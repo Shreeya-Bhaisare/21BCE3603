@@ -1,0 +1,140 @@
+.container {
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(231, 231, 231, 0.25), 0 3.935px 10px rgba(232, 232, 232, 0.25), 0 4.343px 68px rgba(198, 198, 198, 0.25);
+    background-color: #fff;
+    display: flex;
+    max-width: 296px;
+    flex-direction: column;
+    padding: 20px;
+    font: 500 14px Gilroy, sans-serif;
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    max-width: 256px;
+    flex-direction: column;
+  }
+  
+  .tabGroup {
+    display: flex;
+    width: 206px;
+    max-width: 100%;
+    color: rgba(63, 63, 63, 1);
+    justify-content: center;
+  }
+  
+  .tabList {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .activeTab {
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .logo {
+    aspect-ratio: 24.39;
+    object-fit: contain;
+    object-position: center;
+    width: 49px;
+    border-radius: 10px;
+    margin-top: 6px;
+  }
+  
+  .searchBar {
+    border-radius: 10px;
+    background-color: #fcfcfe;
+    display: flex;
+    margin-top: 12px;
+    min-height: 40px;
+    width: 100%;
+    align-items: center;
+    gap: 28px;
+    color: var(--tmo-black, #313131);
+    padding: 12px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .searchIcon {
+    aspect-ratio: 1.06;
+    object-fit: contain;
+    object-position: center;
+    width: 17px;
+  }
+  
+  .ownersList {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 256px;
+    align-items: flex-start;
+    gap: 40px 78px;
+    color: var(--tmo-black, #313131);
+    justify-content: space-between;
+  }
+  
+  .ownerItem {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .activePadding {
+    background-color: #fff;
+    width: 4px;
+    height: 42px;
+  }
+  
+  .ownerDetails {
+    display: flex;
+    flex-direction: column;
+    width: 164px;
+  }
+  
+  .ownerName {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--tmo-blue, #4380ec);
+    font-weight: 600;
+  }
+  
+  .ownerIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    border-radius: 0;
+  }
+  
+  .checkbox {
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #3a3a3a;
+  }
+  
+  .scrollIndicator {
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 8px;
+    height: 47px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }

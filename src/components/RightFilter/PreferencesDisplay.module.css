@@ -1,0 +1,49 @@
+.preferences {
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(231, 231, 231, 0.25), 0 3.935px 10px rgba(232, 232, 232, 0.25), 0 4.343px 68px rgba(198, 198, 198, 0.25);
+    background-color: #fff;
+    display: flex;
+    max-width: 296px;
+    flex-direction: column;
+    color: #000;
+    font-weight: 700;
+    padding: 21px 20px;
+    margin-left: 80px;
+  }
+  
+  .displayTitle {
+    font: 16px Gilroy, sans-serif;
+  }
+  
+  .viewOptions {
+    border-radius: 11px;
+    background-color: #f1f1f1;
+    display: flex;
+    margin-top: 12px;
+    min-height: 50px;
+    width: 100%;
+    max-width: 255px;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+    padding: 7px 8px;
+    font: 14px DM Sans, sans-serif;
+  }
+  
+  .gridView {
+    align-self: stretch;
+    border-radius: 8px;
+    box-shadow: 0 2.983px 2.983px rgba(212, 212, 212, 0.08), 0 2.983px 14.917px rgba(198, 198, 198, 0.25);
+    background-color: #fff;
+    gap: 10px;
+    width: 125px;
+    margin: auto 0;
+    padding: 9px 26px 9px 33px;
+  }
+  
+  .listView {
+    text-align: center;
+    align-self: stretch;
+    width: 102px;
+    margin: auto 0;
+  }
